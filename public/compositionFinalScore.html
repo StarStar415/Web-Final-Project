@@ -72,29 +72,100 @@
                 cnt++;
             }
             function scoreCount(){
-               var sc=localStorage.getItem("nowScore")
-               if(sc>=90){
-                score[3]=finalComment[1];
-                score[2]=star[0];
-                console.log(score[2])
+               var sc=localStorage.getItem("nowScore");
+               var Level = localStorage.getItem("nowChooseLevel");
+               if(Level=="輕鬆"){
+                    if(sc>=95){
+                    score[3]=finalComment[1];
+                    score[2]=star[0];
+                    console.log(score[2])
+                }
+                if(sc>=90&&sc<95){
+                    score[3]=finalComment[3];
+                    score[2]=star[1];
+                }
+                if(sc>=80&&sc<90){
+                    score[3]=finalComment[0];
+                    score[2]=star[2];
+                }
+                if(sc>=70&&sc<80){
+                    score[3]=finalComment[2];
+                    score[2]=star[3];
+                }
+                if(sc<70){
+                    score[3]=finalComment[4];
+                    score[2]=star[4];
+                }
                }
-               if(sc>=80&&sc<90){
-                score[3]=finalComment[3];
-                score[2]=star[1];
+               else if(Level=="中等"){
+                    if(sc>=90){
+                    score[3]=finalComment[1];
+                    score[2]=star[0];
+                    console.log(score[2])
+                }
+                if(sc>=85&&sc<90){
+                    score[3]=finalComment[3];
+                    score[2]=star[1];
+                }
+                if(sc>=75&&sc<85){
+                    score[3]=finalComment[0];
+                    score[2]=star[2];
+                }
+                if(sc>=65&&sc<75){
+                    score[3]=finalComment[2];
+                    score[2]=star[3];
+                }
+                if(sc<65){
+                    score[3]=finalComment[4];
+                    score[2]=star[4];
+                }
                }
-               if(sc>=70&&sc<80){
-                score[3]=finalComment[0];
-                score[2]=star[2];
+               else if(Level=="挑戰"){
+                    if(sc>=85){
+                    score[3]=finalComment[1];
+                    score[2]=star[0];
+                    console.log(score[2])
+                }
+                if(sc>=80&&sc<85){
+                    score[3]=finalComment[3];
+                    score[2]=star[1];
+                }
+                if(sc>=70&&sc<80){
+                    score[3]=finalComment[0];
+                    score[2]=star[2];
+                }
+                if(sc>=60&&sc<70){
+                    score[3]=finalComment[2];
+                    score[2]=star[3];
+                }
+                if(sc<60){
+                    score[3]=finalComment[4];
+                    score[2]=star[4];
+                }
                }
-               if(sc>=60&&sc<70){
-                score[3]=finalComment[2];
-                score[2]=star[3];
+               else if(Level=="專精"){
+                    if(sc>=80){
+                    score[3]=finalComment[1];
+                    score[2]=star[0];
+                    console.log(score[2])
+                }
+                if(sc>=75&&sc<80){
+                    score[3]=finalComment[3];
+                    score[2]=star[1];
+                }
+                if(sc>=65&&sc<75){
+                    score[3]=finalComment[0];
+                    score[2]=star[2];
+                }
+                if(sc>=55&&sc<65){
+                    score[3]=finalComment[2];
+                    score[2]=star[3];
+                }
+                if(sc<55){
+                    score[3]=finalComment[4];
+                    score[2]=star[4];
+                }
                }
-               if(sc<60){
-                score[3]=finalComment[4];
-                score[2]=star[4];
-               }
-                
             }
             window.addEventListener("load",start,false);
         </script>
