@@ -100,11 +100,11 @@
         </style>
     </head>
     <body>
-        <audio id="music" loop="true" preload="true" ><source src="voice/No Doubt - Yung Logos.mp3" type="audio/mp3"></audio>
-        <audio id="musicWA" preload="true" ><source src="voice/WA.mp3" type="audio/mp3"></audio>
-        <audio id="musicAC" preload="true" ><source src="voice/AC.mp3" type="audio/mp3"></audio>
-        <div class="containerFinish" id="containerFinish" style="position:absolute;top:40%;left: 25%;z-index: 3;width: 50%;height: auto;display: none;">
-            恭喜完成 !! <br>點擊下方按鈕查案評分結果<br>
+        <audio id="music" autoplay="true" loop="true" preload="true" ><source src="voice/Mulholland - King Canyon.mp3" type="audio/mp3"></audio>
+        <audio id="musicWA" autoplay="true"  preload="true" ><source src="voice/WA.mp3" type="audio/mp3"></audio>
+        <audio id="musicAC" autoplay="true"  preload="true" ><source src="voice/AC.mp3" type="audio/mp3"></audio>
+        <div class="containerFinish" id="containerFinish" style="position:absolute;top:40%;left: 25%;z-index: 3;width: 50%;height: 30%;display: none;">
+            <br>恭喜完成 !! <br>點擊下方按鈕查案評分結果<br>
             <input type="button" onclick="location.href='compositionFinalScore.html'"value="查看評分結果" name="finish" id="done" style="border: #f4b8c3 3px solid;border-radius: 15px;background-color:#f5c3cc;font-size:90%;width:46%;height:25%;">
         </div>
         <div id="contain">
@@ -222,8 +222,7 @@
                 var cnt;
                 if(num==0){
                     cnt=0;
-                    if(ans.size==ans0.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans0.includes(value));
                             if(ans0.includes(value)){
@@ -246,16 +245,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n是->室\n火->夥\n應->因");
-                    }
                 }
                 else if(num==1){
                     cnt=0;
-                    if(ans.size==ans1.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans1.includes(value));
                             if(ans1.includes(value)){
@@ -277,16 +270,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n國->過");
-                    }
                 }
                 else if(num==2){
                     cnt=0;
-                    if(ans.size==ans2.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans2.includes(value));
                             if(ans2.includes(value)){
@@ -308,16 +295,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n野->也\n史->使\n貝->被\n克->課\n夜->業");
-                    }
                 }
                 else if(num==3){
                     cnt=0;
-                    if(ans.size==ans3.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans3.includes(value));
                             if(ans3.includes(value)){
@@ -339,16 +320,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n與->雨\n情->晴\n始->使");
-                    }
                 }
                 else if(num==4){
                     cnt=0;
-                    if(ans.size==ans4.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans4.includes(value)){
@@ -370,16 +345,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play()
-                        alert("答案:\n凡->繁");
-                    }
                 }
                 else if(num==5){
                     cnt=0;
-                    if(ans.size==ans5.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans5.includes(value)){
@@ -401,16 +370,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play()
-                        alert("答案:\n隻->支\n與->雨\n三->傘\n電->店");
-                    }
                 }
                 else if(num==6){
                     cnt=0;
-                    if(ans.size==ans6.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans6.includes(value)){
@@ -432,16 +395,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n由->尤\n是->事\n有->又\n頁->夜\n消->宵");
-                    }
                 }
                 else if(num==7){
                     cnt=0;
-                    if(ans.size==ans7.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans7.includes(value)){
@@ -463,30 +420,36 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n藝->一\n稅->睡");
-                    }
                     
                 }
                 else if(num==8){
                     cnt=0;
-                    if(ans.size==ans8.length){
-                        sc+=4;
-                        document.getElementById("s").innerHTML=sc;
-                        musicAC.play();
-                        
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n此題無錯字");
-                    }
+                    ans.forEach(function(value){
+                            console.log(value)
+                            console.log(ans4.includes(value));
+                            if(ans8.includes(value)){
+                                cnt++;
+                                sc+=2.5;
+                                document.getElementById("s").innerHTML=sc;
+                            }
+                            else{
+                                sc-=2.5;
+                                if(sc<0) sc=0;
+                                document.getElementById("s").innerHTML=sc;
+                            }
+                        });
+                        console.log(cnt)
+                        if(cnt!=ans8.length){
+                            musicWA.play();
+                            alert("答案:\n此題無錯字");
+                        }
+                        else{
+                            musicAC.play();
+                        }
                 }
                 else if(num==9){
                     cnt=0;
-                    if(ans.size==ans9.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans9.includes(value)){
@@ -508,16 +471,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n相->像");
-                    }
                 }
                 else if(num==10){
                     cnt=0;
-                    if(ans.size==ans10.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans10.includes(value)){
@@ -539,16 +496,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n揄->於");
-                    }
                 }
                 else if(num==11){
                     cnt=0;
-                    if(ans.size==ans11.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans11.includes(value)){
@@ -570,17 +521,11 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n跳->眺");
-                    }
                 
                 }
                 else if(num==12){
                     cnt=0;
-                    if(ans.size==ans12.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans12.includes(value)){
@@ -602,17 +547,11 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n由->有\n胎->臺\n蜜->祕");
-                    }
                 
                 }
                 else if(num==13){
                     cnt=0;
-                    if(ans.size==ans13.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans13.includes(value)){
@@ -634,16 +573,10 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n胎->臺\n竟->盡\n牢->撈\n意->一");
-                    }
                 }
                 else if(num==14){
                     cnt=0;
-                    if(ans.size==ans14.length){
-                        ans.forEach(function(value){
+                    ans.forEach(function(value){
                             console.log(value)
                             console.log(ans4.includes(value));
                             if(ans14.includes(value)){
@@ -665,11 +598,6 @@
                         else{
                             musicAC.play();
                         }
-                    }
-                    else{
-                        musicWA.play();
-                        alert("答案:\n西->喜\n折->著\n牢->撈\n意->一");
-                    }
                     
                 }
                 localStorage.setItem("nowScore",sc);
