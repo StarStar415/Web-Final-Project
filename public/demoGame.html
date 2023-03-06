@@ -77,7 +77,7 @@
                     if(Obj=="數學")type=1;
                     if(Obj=="英文")type=2;
                     if(Obj=="綜合")type=Math.floor(Math.random()*3);
-                    $.getJSON("https://raw.githubusercontent.com/StarStar415/wedFinalProject/main/Question"+objtype[type]+".json", function(result){
+                    $.getJSON("https://raw.githubusercontent.com/StarStar415/Web-Final-Project-Backend/main/public/json/Question"+objtype[type]+".json", function(result){
                         $.each(result, function(i, field){
                             if(i==numQuestion){
                                 document.getElementById("Question").innerHTML=result[i].questionWord+"<br>";
